@@ -60,6 +60,22 @@ int main(void){
         printf("\n");
     }
     */
-   
+
+    //피라미드 변수를 1로 저장했을 때//
+   /*
+    int floor;
+    printf("몇 층으로 쌓겟습니까?(5~100) : ");
+    scanf("%d", &floor);
+
+    for(int i = 1; i <= floor; i++){
+        for(int j = 1; j <= floor - i; j++){
+            printf(" ");
+        }
+        for(int k = 1; k <= 2 * i - 1; k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+   */
     return 0;
 }
