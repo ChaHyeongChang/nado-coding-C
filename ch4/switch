@@ -10,14 +10,14 @@ int main(void){
     
 
     switch (i){
-        case 8:
+        case 8: 
         case 9:
         case 10:
         case 11:
-        case 12:
-        case 13: 
-            printf("초등학생입니다.\n"); 
-            break;
+        case 12:         //같은 문장을 여러번 안쓰려고
+        case 13:         //앞에서 값과 일치하는 case 문을 만날 때까지 아무것도 안하고 넘어가다 값이 일치하는 case를 만나면 그 이후 문장을 모두 실행하는 것을 이용해서 동일한 문장을 지우고 case가 13일때만 남겨놓기
+            printf("초등학생입니다.\n");   
+            break;                       
         case 14:
         case 15:
         case 16:
