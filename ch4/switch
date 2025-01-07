@@ -1,1 +1,57 @@
 
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void){
+    
+    srand(time(NULL));  //난수 초기화
+    int i = rand() % 12 + 8;  //i의 값을 8부터 19까지로 만들기 -> rand() % 12 --> 0 ~ 11  ---> rand() % 12 + 8 ----> (0 + 8) ~ (11 + 8)  따라서 8 ~ 19 
+    
+
+    switch (i){
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+        case 13: 
+            printf("초등학생입니다.\n"); 
+            break;
+        case 14:
+        case 15:
+        case 16:
+            printf("중학생입니다.\n");
+            break;
+        case 17:
+        case 18:
+        case 19:
+            printf("고등학생입니다.\n");
+            break;
+        default:
+            printf("학생이 아닙니다.\n");
+    }
+ 
+/*
+    int n = 2;
+    switch (n)
+    {
+    case 1:
+        printf("다오\n");
+        
+    case 2:
+        printf("디지니\n"); //break문이 없으므로 다음줄에 있는 case3, default에 해당하는 문장도 함께 실행됨 따라서 break문을 추가시켜줘야함
+                            //break문이 없으므로 실행값은 디지니\n배찌\n마리드\n
+                            //break문이 있었다면 실행값은 디지니\n
+        
+    case 3:
+        printf("배찌\n");
+        
+    
+    default:
+        printf("마리드\n");
+      
+    }
+*/
+    return 0;
+}
