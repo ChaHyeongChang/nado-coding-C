@@ -26,7 +26,7 @@ int main(void){
 
     }
 
-    
+    //i를 0으로 시작한 역삼각형
    /* for (int i = 0; i < 5; i++){
         for(int j = 0; j < 5 - i; j++){
             printf("*");
@@ -34,7 +34,7 @@ int main(void){
         printf("\n");
     }
     */
-
+    //i를 5로 시작한 역삼각형
     /*
     for(int i = 5; i > 0; i--){
         for(int j = i; j > 0; j--){
