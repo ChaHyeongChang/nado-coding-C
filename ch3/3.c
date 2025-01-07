@@ -1,4 +1,4 @@
-
+//마름모 출력
 #include <stdio.h>
 
 int main(void){
