@@ -65,6 +65,33 @@ int main(void){
         }
     }
     */
+
+
+
+    //////////////138p 셀프체크///////////////
+    /*
+    int coffee = 4500;
+    int sandwich = 6000;
+    
+    int coffee_count;
+    int sandwich_count;
+
+    printf("주문하실 커피와 샌드위치의 개수를 입력해주세요.\n");
+    printf("커피 : ");
+    scanf("%d", &coffee_count);
+
+    printf("샌드위치 : ");
+    scanf("%d", &sandwich_count);
+
+    if (sandwich_count >= 1){
+        coffee = 3500;
+    }
+    
+    int money;
+    money = coffee * coffee_count + sandwich * sandwich_count;
+
+    printf("주문하신 메뉴의 총 금액은 %d원 입니다.\n", money);
+    */
     
     return 0;
 }
