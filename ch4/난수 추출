@@ -32,7 +32,8 @@ int main(void){
     int begin = 3;
     int end = 5;
     int rad;
-    
+
+    srand((unsigned int)time(NULL));
     rad = rand() % (end - begin + 1) + begin;
 
     printf("%d", rad);
