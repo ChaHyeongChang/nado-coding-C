@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+//함수 선언
+void p(int num); 
+
+int main(void){
+    int num = 2;
+    //printf("num은 %d입니다.\n", num); // 2
+    p(num); //함수 호출
+
+    num += 3;
+    //printf("num은 %d입니다.\n", num); // 5
+    p(num); //함수 호출
+
+    num -= 1;
+    //printf("num은 %d입니다.\n", num); // 4
+    p(num); //함수 호출
+
+    num *= 3;
+    //printf("num은 %d입니다.\n", num); // 12
+    p(num); //함수 호출
+
+    num /=6;
+    //printf("num은 %d입니다.\n", num); // 2
+    p(num); //함수 호출
+
+    return 0;
+    
+}
+
+//함수 정의
+//반환값 없이 출력만 하므로 함수의 반환형은 void
+void p(int num){
+    printf("num은 %d입니다.\n", num);
+}
+
+//함수 선언과 함수 정의는 반환형, 함수명, 매개변수의 종류와 개수를 동일하게 적어야 하지만 매개변수의 이름은 다르게 작성해도됨(되도록 같은 이름 사용!!)
+/*
+void p(int num1212){
+    printf("num은 %d입니다.\n", num1212); //매개변수의 이름은 달라도 종류와 개수가 같으면 작동함함
+}
+*/
