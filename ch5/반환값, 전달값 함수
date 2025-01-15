@@ -73,7 +73,8 @@ void function_with_params(int num1, int num2, int num3){
 }
 */
 
-//반환값과 파라미터(전달값)가 있는 함수수
+//반환값과 파라미터(전달값)가 있는 함수
+//사과를 먹었을 때 전체중 몇개가 있는지 확인하는 함수
 int apple(int total, int ate);
 
 int main(void){
