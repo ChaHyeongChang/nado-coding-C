@@ -59,3 +59,31 @@ void succes(){
 void fail(){
     printf("\n >> 땡~~!^^ 틀렸습니다.\n");
 }
+
+
+
+//////////////178p 셀프체크///////////////
+/*
+#include <stdio.h>
+
+void convert_time(int minute);
+
+int main(void){
+
+    int time = 0;
+    
+    printf("게임을 몇 분 하실건가요 : ");
+    scanf("%d", &time);
+
+    convert_time(time);
+
+    return 0;
+}
+
+void convert_time(int minute){
+    int hour = minute / 60;
+    int remain_minute = minute % 60;
+
+    printf("%d시간 %d분 충전됐습니다.\n", hour, remain_minute);
+}
+*/
