@@ -1,4 +1,4 @@
-
+//173~174p 비밀번호 맞추기 게임
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
