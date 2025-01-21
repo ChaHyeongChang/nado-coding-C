@@ -34,15 +34,15 @@ int main(void){
 int main(void){
     char c1, c2, c3;
 
-    scanf("%c", &c1);
+    scanf("%c", &c1);  //c1 = getchar();
     while(getchar() != '\n');
     printf("%c\n", c1);
 
-    scanf("%c", &c2);
+    scanf("%c", &c2);  //c2 = getchar();
     while(getchar() != '\n');
     printf("%c\n", c2);
 
-    scanf("%c", &c3);
+    scanf("%c", &c3);  //c3 = getchar();
     while(getchar() != '\n');
     printf("%c\n", c3);
 
