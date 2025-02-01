@@ -73,7 +73,23 @@ int main() {
 */
 
 
+/*
+✅ 줄바꿈 대신에 printf("%c", 10);
+		-10은 ASCII 코드에서 줄바꿈(New Line, \n) 문자에 해당함.
+		-따라서 printf("%c", 10); 은 printf("\n"); 과 같은 동작을 합니다.
 
+	ex)
+		#include <stdio.h>
+
+			int main() {
+    			printf("Hello");
+ 				printf("%c", 10);  // ASCII 10 → 줄바꿈
+    			printf("World");
+
+    			return 0;
+			}
+
+*/
 
 
 
