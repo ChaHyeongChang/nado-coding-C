@@ -104,5 +104,32 @@ int main(void){
 }
 */
 
+/////점수를 하나씩 입력받기
+/*
+#include <stdio.h>
+#include <string.h>
 
+int main(void){
+    int score[5] = {0};
+
+    int total_score = 0;
+    float average_score = 0.0f;
+
+    //사용자로부터 점수 입력 받기
+    for(int i = 0; i < sizeof(score)/sizeof(score[0]); i++){ //sizeof(score)/sizeof(score[0]) 배열의 길이 구하는 법 배열의 메모리 크기 (5 * 4) / int형의 메모리 크기 4 ==> 5
+        printf("%d번 과목 점수를 입력하세요 : ", i + 1);
+        scanf("%f", &score[i]);
+    }
+
+    for(int i = 0; i < sizeof(score) / sizeof(score[0]); i++){ //sizeof(score)/sizeof(score[0]) 배열의 길이 구하는 법 배열의 메모리 크기 (5 * 4) / int형의 메모리 크기 4 ==> 5
+        total_score += score[i];
+    }
+
+    average_score = total_score / (float)(sizeof(score) / sizeof(score[0])); //나누기를 할때 몫을 소수점까지 계산하기 위해서 앞에 (float)를 붙임
+
+    printf("총점은 %d점, 평균은 %.1f점 입니다.", total_score, average_score);
+
+    return 0;
+}
+*/
 
