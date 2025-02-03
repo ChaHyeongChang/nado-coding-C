@@ -29,6 +29,27 @@ int main(void){
 }
 */
 
+//문자와 정수를 입력받기
+
+#include <stdio.h>
+
+int main(void){
+
+    char c1, c2;
+    int answer;
+
+    scanf("%c", &c1); //만약 a엔터를 입력하고
+    scanf("%d", &answer); //만약 123엔터를 입력한다면
+    scanf("%c", &c2); //scanf("%c", &c2);를 실행하려고 할 때, 버퍼에 이미 개행 문자 \n이 남아 있어서 바로 c2로 잃히게 됨.
+
+    printf("%c%d%c", c1, answer, c2); //a123\n(줄바꿈) -->버퍼에는 \n이 하나 남게됨됨
+
+    printf("줄바꿈되나?"); //줄바꿈되고 출력
+
+
+    return 0;
+}
+
 /////문자를 입력하고 buffer에 있는 첫번째 문자만 입력받고 다음 입력을 계속적으로 입력받게 하는 코드
 
 int main(void){
