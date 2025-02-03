@@ -82,6 +82,27 @@ int main(void){
 }
 
 
+//////////////216p 셀프체크///////////////
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+    int score[5] = {76, 84, 80, 92, 96};
+
+    int total_score = 0;
+    float average_score = 0.0f;
+    for(int i = 0; i < sizeof(score)/sizeof(score[0]); i++){ //sizeof(score)/sizeof(score[0]) 배열의 길이 구하는 법 배열의 메모리 크기 (5 * 4) / int형의 메모리 크기 4 ==> 5
+        total_score += score[i];
+    }
+
+    average_score = total_score / (float)(sizeof(score)/sizeof(score[0])); //나누기를 할때 몫을 소수점까지 계산하기 위해서 앞에 (float)를 붙임임
+
+    printf("총점은 %d점, 평균은 %.1f점 입니다.", total_score, average_score);
+
+    return 0;
+}
+*/
 
 
 
