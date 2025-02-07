@@ -36,7 +36,7 @@ int main(void){
     printf("d = %d바이트\n\n", sizeof(d)); //8byte
 
     //각 포인터의 크기출력
-    printf("ip = %d바이트\n", sizeof(ip)); //8byte (64it환경에서 포인터의 크기는 항상 8byte)
+    printf("ip = %d바이트\n", sizeof(ip)); //8byte (64bit환경에서 포인터의 크기는 항상 8byte)
     printf("cp = %d바이트\n", sizeof(cp)); //8byte
     printf("dp = %d바이트\n", sizeof(dp)); //8byte
     
