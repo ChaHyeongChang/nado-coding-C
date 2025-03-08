@@ -25,3 +25,28 @@ void swap(int x, int y){
     y = temp;
 }
 */
+
+//Call by address --> 본래의 전달하는 값을 변경하는 원리(변수의 값이 변경되길 바랄 때 사용)
+#include <stdio.h>
+
+void swap(int *p1, int *p2); //a와 b의 주소를 저장하는 포인터
+
+int main(void){
+    int a = 3, b = 5;
+
+    swap(&a, &b); //주소를 포인터가 저장해서 포인터가 가리키게함
+
+    printf("%d %d", a, b);
+    //5 3으로 변경됨 --> swap함수에서 포인터를 이용해 a와 b의 주소가 가리키는 값을 바꿨기 때문문 
+
+    return 0;
+    
+}
+
+void swap(int *p1, int *p2){
+    int temp;
+    //역참조를 이용해 두 변수의 값을 바꿈
+    temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
+}
