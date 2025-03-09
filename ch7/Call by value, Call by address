@@ -28,7 +28,7 @@ void swap(int x, int y){
 }
 */
 
-//Call by address --> 본래의 전달하는 값을 변경하는 원리(변수의 값이 변경되길 바랄 때 사용)
+//Call by address(참조에 의한 전달) --> 본래의 전달하는 값을 변경하는 원리(변수의 값이 변경되길 바랄 때 사용)
 #include <stdio.h>
 
 void swap(int *p1, int *p2); //a와 b의 주소를 저장하는 포인터
